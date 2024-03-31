@@ -4,5 +4,9 @@
         <members>bosche</members>
         <name>CustomApplication</name>
     </types>
+    <types>
+        <members>Bosch_Institute_UtilityBar</members>
+        <name>FlexiPage</name>
+    </types>
     <version>60.0</version>
 </Package>
