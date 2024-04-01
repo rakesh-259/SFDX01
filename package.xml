@@ -11,6 +11,10 @@
         <name>CustomField</name>
     </types>
     <types>
+        <members>Student__c-Student Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
         <members>Student__c.All</members>
         <name>ListView</name>
     </types>
