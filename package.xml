@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Student__c.Address__c</members>
-        <members>Student__c.Email__c</members>
-        <members>Student__c.Enter__c</members>
-        <members>Student__c.Father_Name__c</members>
-        <members>Student__c.Mother_Name__c</members>
-        <members>Student__c.Name__c</members>
-        <members>Student__c.Phone__c</members>
+        <members>Student__c.Brief__c</members>
+        <members>Student__c.Career_Objective__c</members>
+        <members>Student__c.Enroll__c</members>
+        <members>Student__c.Passout__c</members>
+        <members>Student__c.Resume__c</members>
+        <members>Student__c.Salesforce_Role__c</members>
+        <members>Student__c.Salesforce_skill_set__c</members>
+        <members>Student__c.Stream__c</members>
+        <members>Student__c.Weekdays__c</members>
         <name>CustomField</name>
+    </types>
+    <types>
+        <members>Weekdays</members>
+        <name>GlobalValueSet</name>
     </types>
     <types>
         <members>Student__c-Student Layout</members>
