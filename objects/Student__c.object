@@ -316,6 +316,7 @@
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
         <valueSet>
+            <controllingField>Salesforce_Role__c</controllingField>
             <restricted>true</restricted>
             <valueSetDefinition>
                 <sorted>false</sorted>
@@ -360,6 +361,52 @@
                     <label>Salesforce Certifications</label>
                 </value>
             </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>DEV</controllingFieldValue>
+                <controllingFieldValue>QA</controllingFieldValue>
+                <controllingFieldValue>BA</controllingFieldValue>
+                <controllingFieldValue>ARCH</controllingFieldValue>
+                <controllingFieldValue>PROJECT MANAGER</controllingFieldValue>
+                <valueName>Salesforce Administration</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DEV</controllingFieldValue>
+                <controllingFieldValue>ARCH</controllingFieldValue>
+                <controllingFieldValue>PROJECT MANAGER</controllingFieldValue>
+                <valueName>Salesforce Development</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DEV</controllingFieldValue>
+                <controllingFieldValue>QA</controllingFieldValue>
+                <controllingFieldValue>BA</controllingFieldValue>
+                <controllingFieldValue>ARCH</controllingFieldValue>
+                <valueName>Salesforce Lightning</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DEV</controllingFieldValue>
+                <controllingFieldValue>ARCH</controllingFieldValue>
+                <valueName>Salesforce Integration</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DEV</controllingFieldValue>
+                <controllingFieldValue>QA</controllingFieldValue>
+                <controllingFieldValue>BA</controllingFieldValue>
+                <controllingFieldValue>ARCH</controllingFieldValue>
+                <controllingFieldValue>PROJECT MANAGER</controllingFieldValue>
+                <valueName>Salesforce Certifications</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ARCH</controllingFieldValue>
+                <valueName>Salesforce CPQ</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ARCH</controllingFieldValue>
+                <valueName>Salesforce Marketing Cloud</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ARCH</controllingFieldValue>
+                <valueName>Salesforce Einstein Analytics</valueName>
+            </valueSettings>
         </valueSet>
         <visibleLines>4</visibleLines>
     </fields>
@@ -405,8 +452,37 @@
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
+            <controllingField>Enroll__c</controllingField>
             <restricted>true</restricted>
             <valueSetName>Weekdays</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>unchecked</controllingFieldValue>
+                <valueName>Sunday</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>unchecked</controllingFieldValue>
+                <valueName>Saturday</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>Monday</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>Tuesday</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>Wednesday</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>Thursday</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>Friday</valueName>
+            </valueSettings>
         </valueSet>
     </fields>
     <label>Student</label>
