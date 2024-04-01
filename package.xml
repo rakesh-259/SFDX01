@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>bosche</members>
-        <name>CustomApplication</name>
+        <members>Student__c.Address__c</members>
+        <members>Student__c.Email__c</members>
+        <members>Student__c.Enter__c</members>
+        <members>Student__c.Father_Name__c</members>
+        <members>Student__c.Mother_Name__c</members>
+        <members>Student__c.Name__c</members>
+        <members>Student__c.Phone__c</members>
+        <name>CustomField</name>
     </types>
     <types>
-        <members>Student__c</members>
-        <name>CustomObject</name>
-    </types>
-    <types>
-        <members>Bosch_Institute_UtilityBar</members>
-        <name>FlexiPage</name>
+        <members>Student__c.All</members>
+        <name>ListView</name>
     </types>
     <types>
         <members>Admin</members>
