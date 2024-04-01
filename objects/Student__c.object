@@ -164,6 +164,23 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Brief__c</fullName>
+        <externalId>false</externalId>
+        <label>Brief Bio</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Career_Objective__c</fullName>
+        <externalId>false</externalId>
+        <label>Career Objective</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
         <fullName>Email__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Re enter chai ra email</inlineHelpText>
@@ -172,6 +189,14 @@
         <trackTrending>false</trackTrending>
         <type>Email</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Enroll__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Enrolled Full Time</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>Enter__c</fullName>
@@ -219,6 +244,14 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Passout__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Passout?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Phone__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Enter the Phone Number</inlineHelpText>
@@ -227,9 +260,164 @@
         <trackTrending>false</trackTrending>
         <type>Phone</type>
     </fields>
+    <fields>
+        <fullName>Resume__c</fullName>
+        <externalId>false</externalId>
+        <label>Resume</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Salesforce_Role__c</fullName>
+        <externalId>false</externalId>
+        <label>Salesforce Role</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>DEV</fullName>
+                    <default>false</default>
+                    <label>DEV</label>
+                </value>
+                <value>
+                    <fullName>QA</fullName>
+                    <default>false</default>
+                    <label>QA</label>
+                </value>
+                <value>
+                    <fullName>BA</fullName>
+                    <default>false</default>
+                    <label>BA</label>
+                </value>
+                <value>
+                    <fullName>ARCH</fullName>
+                    <default>false</default>
+                    <label>ARCH</label>
+                </value>
+                <value>
+                    <fullName>PROJECT MANAGER</fullName>
+                    <default>false</default>
+                    <label>PROJECT MANAGER</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Salesforce_skill_set__c</fullName>
+        <externalId>false</externalId>
+        <label>Salesforce skill set</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Salesforce Administration</fullName>
+                    <default>false</default>
+                    <label>Salesforce Administration</label>
+                </value>
+                <value>
+                    <fullName>Salesforce Development</fullName>
+                    <default>false</default>
+                    <label>Salesforce Development</label>
+                </value>
+                <value>
+                    <fullName>Salesforce Lightning</fullName>
+                    <default>false</default>
+                    <label>Salesforce Lightning</label>
+                </value>
+                <value>
+                    <fullName>Salesforce Integration</fullName>
+                    <default>false</default>
+                    <label>Salesforce Integration</label>
+                </value>
+                <value>
+                    <fullName>Salesforce CPQ</fullName>
+                    <default>false</default>
+                    <label>Salesforce CPQ</label>
+                </value>
+                <value>
+                    <fullName>Salesforce Marketing Cloud</fullName>
+                    <default>false</default>
+                    <label>Salesforce Marketing Cloud</label>
+                </value>
+                <value>
+                    <fullName>Salesforce Einstein Analytics</fullName>
+                    <default>false</default>
+                    <label>Salesforce Einstein Analytics</label>
+                </value>
+                <value>
+                    <fullName>Salesforce Certifications</fullName>
+                    <default>false</default>
+                    <label>Salesforce Certifications</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Stream__c</fullName>
+        <externalId>false</externalId>
+        <label>Stream</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Arts</fullName>
+                    <default>false</default>
+                    <label>Arts</label>
+                </value>
+                <value>
+                    <fullName>Commerce</fullName>
+                    <default>false</default>
+                    <label>Commerce</label>
+                </value>
+                <value>
+                    <fullName>Science</fullName>
+                    <default>false</default>
+                    <label>Science</label>
+                </value>
+                <value>
+                    <fullName>Management</fullName>
+                    <default>false</default>
+                    <label>Management</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Weekdays__c</fullName>
+        <externalId>false</externalId>
+        <label>Weekdays</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Weekdays</valueSetName>
+        </valueSet>
+    </fields>
     <label>Student</label>
     <listViews>
         <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Email__c</columns>
+        <columns>Name__c</columns>
+        <columns>Phone__c</columns>
+        <columns>Passout__c</columns>
+        <columns>Enroll__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
