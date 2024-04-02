@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
+        <members>bosche</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
         <members>Instructor__c.Instructor_Name__c</members>
         <members>Instructor__c.Weekdays__c</members>
         <members>Student__c.Enroll__c</members>
