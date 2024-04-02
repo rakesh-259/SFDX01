@@ -27,6 +27,7 @@
     </types>
     <types>
         <members>Instructor__c-Instructor Layout</members>
+        <members>Student__c-Student Layout</members>
         <name>Layout</name>
     </types>
     <types>
