@@ -15,6 +15,7 @@
     <label>Bosch Institute</label>
     <navType>Standard</navType>
     <tabs>Student__c</tabs>
+    <tabs>Instructor__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Bosch_Institute_UtilityBar</utilityBar>
 </CustomApplication>
