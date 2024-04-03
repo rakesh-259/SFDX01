@@ -5,33 +5,12 @@
         <name>CompactLayout</name>
     </types>
     <types>
-        <members>Instructor__c.Bonu__c</members>
-        <members>Instructor__c.Rating__c</members>
-        <members>Instructor__c.Salary__c</members>
-        <members>Instructor__c.Total_Salary__c</members>
-        <members>Student__c.Age__c</members>
+        <members>Student__c.Name__c</members>
         <name>CustomField</name>
-    </types>
-    <types>
-        <members>Instructor__c-Instructor Layout</members>
-        <members>Student__c-Experience Layout</members>
-        <members>Student__c-Fresher Layout</members>
-        <members>Student__c-Student Layout</members>
-        <name>Layout</name>
     </types>
     <types>
         <members>Admin</members>
         <name>Profile</name>
-    </types>
-    <types>
-        <members>Student__c.Experience</members>
-        <members>Student__c.Fresher</members>
-        <name>RecordType</name>
-    </types>
-    <types>
-        <members>Instructor__c.Check_Rating</members>
-        <members>Student__c.Prevent_Age_Zero_or_Negative</members>
-        <name>ValidationRule</name>
     </types>
     <version>60.0</version>
 </Package>
