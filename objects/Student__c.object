@@ -142,6 +142,13 @@
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Student_Compact_Layout</fullName>
+        <fields>RecordTypeId</fields>
+        <fields>Name__c</fields>
+        <fields>Name</fields>
+        <label>Student_Compact_Layout</label>
+    </compactLayouts>
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
