@@ -154,6 +154,18 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
+        <fullName>Bonu__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Salary__c &gt; 10000 ,(Salary__c * 20)/100,(Salary__c * 10)/100)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Bonus</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
         <fullName>Instructor_Name__c</fullName>
         <caseSensitive>false</caseSensitive>
         <externalId>false</externalId>
@@ -163,6 +175,39 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Rating__c</fullName>
+        <externalId>false</externalId>
+        <label>Rating</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Salary__c</fullName>
+        <externalId>false</externalId>
+        <label>Salary</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Salary__c</fullName>
+        <externalId>false</externalId>
+        <formula>Salary__c  +  Bonu__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Salary</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
     </fields>
     <fields>
         <fullName>Weekdays__c</fullName>
@@ -190,5 +235,11 @@
     <pluralLabel>Instructors</pluralLabel>
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Check_Rating</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR(Rating__c &lt; 1,Rating__c &gt;5)</errorConditionFormula>
+        <errorMessage>Rating should be between 1 and 5</errorMessage>
+    </validationRules>
     <visibility>Public</visibility>
 </CustomObject>
