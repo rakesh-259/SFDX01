@@ -142,6 +142,13 @@
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Student_Compact_Layout</fullName>
+        <fields>RecordTypeId</fields>
+        <fields>Name__c</fields>
+        <fields>Name</fields>
+        <label>Student_Compact_Layout</label>
+    </compactLayouts>
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
@@ -161,6 +168,17 @@
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Age__c</fullName>
+        <externalId>false</externalId>
+        <label>Age</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
         <unique>false</unique>
     </fields>
     <fields>
@@ -503,7 +521,26 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Students</pluralLabel>
+    <recordTypes>
+        <fullName>Experience</fullName>
+        <active>true</active>
+        <description>Provide the details for Experience candidates</description>
+        <label>Experience</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Fresher</fullName>
+        <active>true</active>
+        <description>Provide the details for Fresher candidates</description>
+        <label>Fresher</label>
+    </recordTypes>
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Prevent_Age_Zero_or_Negative</fullName>
+        <active>true</active>
+        <errorConditionFormula>Age__c &lt;= 0</errorConditionFormula>
+        <errorDisplayField>Age__c</errorDisplayField>
+        <errorMessage>Please Enter valid age</errorMessage>
+    </validationRules>
     <visibility>Public</visibility>
 </CustomObject>
