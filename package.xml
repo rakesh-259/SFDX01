@@ -1,37 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Student__c.Student_Compact_Layout</members>
-        <name>CompactLayout</name>
-    </types>
-    <types>
-        <members>Instructor__c.Bonu__c</members>
-        <members>Instructor__c.Rating__c</members>
-        <members>Instructor__c.Salary__c</members>
-        <members>Instructor__c.Total_Salary__c</members>
-        <members>Student__c.Age__c</members>
+        <members>Class__c.Course_Duraction__c</members>
+        <members>Class__c.Fee__c</members>
+        <members>Student__c.Classes__c</members>
         <name>CustomField</name>
     </types>
     <types>
-        <members>Instructor__c-Instructor Layout</members>
+        <members>Class__c</members>
+        <members>Student__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Class__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Class__c-Class Layout</members>
         <members>Student__c-Experience Layout</members>
         <members>Student__c-Fresher Layout</members>
         <members>Student__c-Student Layout</members>
         <name>Layout</name>
     </types>
     <types>
+        <members>Class__c.All</members>
+        <name>ListView</name>
+    </types>
+    <types>
         <members>Admin</members>
         <name>Profile</name>
-    </types>
-    <types>
-        <members>Student__c.Experience</members>
-        <members>Student__c.Fresher</members>
-        <name>RecordType</name>
-    </types>
-    <types>
-        <members>Instructor__c.Check_Rating</members>
-        <members>Student__c.Prevent_Age_Zero_or_Negative</members>
-        <name>ValidationRule</name>
     </types>
     <version>60.0</version>
 </Package>
