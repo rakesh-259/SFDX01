@@ -141,7 +141,7 @@
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayoutAssignment>Student_Compact_Layout</compactLayoutAssignment>
     <compactLayouts>
         <fullName>Student_Compact_Layout</fullName>
         <fields>RecordTypeId</fields>
@@ -197,6 +197,18 @@
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Classes__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Classes</label>
+        <referenceTo>Class__c</referenceTo>
+        <relationshipLabel>Students</relationshipLabel>
+        <relationshipName>Students</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Email__c</fullName>
