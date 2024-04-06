@@ -7,6 +7,16 @@
     </applicationVisibilities>
     <custom>false</custom>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Class__c.Course_Duraction__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Class__c.Fee__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Instructor__c.Bonu__c</field>
         <readable>true</readable>
@@ -54,6 +64,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Student__c.Career_Objective__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Student__c.Classes__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -122,6 +137,9 @@
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
+        <layout>Class__c-Class Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Instructor__c-Instructor Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -135,6 +153,15 @@
     <layoutAssignments>
         <layout>Student__c-Student Layout</layout>
     </layoutAssignments>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Class__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -163,6 +190,10 @@
         <recordType>Student__c.Fresher</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
+    <tabVisibilities>
+        <tab>Class__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
     <tabVisibilities>
         <tab>Instructor__c</tab>
         <visibility>DefaultOn</visibility>

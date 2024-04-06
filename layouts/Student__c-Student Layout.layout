@@ -51,6 +51,10 @@
                 <behavior>Edit</behavior>
                 <field>Weekdays__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Classes__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
