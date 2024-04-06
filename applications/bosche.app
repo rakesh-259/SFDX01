@@ -16,6 +16,7 @@
     <navType>Standard</navType>
     <tabs>Student__c</tabs>
     <tabs>Instructor__c</tabs>
+    <tabs>Class__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Bosch_Institute_UtilityBar</utilityBar>
 </CustomApplication>
